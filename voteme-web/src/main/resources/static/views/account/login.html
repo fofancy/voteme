@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Vote.me</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/account/login.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="/js/account/Account.js"></script>
+    <script src="/js/account/SignupService.js"></script>
+    <script src="/js/account/LoginService.js"></script>
+    <script src="/js/account/AuthModule.js"></script>
+
+    <script src="/js/account/AccountDomBinder.js"></script>
+    <script src="/js/main.js"></script>
+
+</head>
+<body>
+
+<header class="navbar navbar-default">
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-md-11 col-md-offset-1">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand navbar-brand-logo" href="#">
+                        <div class="logo">
+                            <img src="/imgs/logo.jpg" class="vote-logo">
+                        </div>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li>
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control" placeholder="Search votings">
+                                    <span class="input-group-btn" >
+                                            <button type="submit" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                            </button>
+                                        </span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Votings</a></li>
+                            <li><a href="/account/login" id="account-button">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container" id="content">
+    <div id="login-forms">
+        <div class="card card-container" id="form-login">
+            <img class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <p class="profile-name-card"></p>
+
+            <form class="form-signin">
+                <input type="text"  id="signin-email" class="form-control" placeholder="Email address" required autofocus>
+                <input type="password" id="signin-pass" class="form-control" placeholder="Password" required>
+                <div id="singin-remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+
+                <input id="signin-btn" class="btn btn-lg btn-primary btn-block btn-signin" type="button" value="Sign In"></input>
+            </form>
+
+            <a href="#" id="signin-forget-a" class="forgot-password">Forgot the password?</a>
+            <a href="#" id="signin-signup-a">Sign up</a>
+        </div>
+
+        <div class="card card-container" id="lost-form" style="display:none;">
+            <img id="lost-profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <div id="div-lost-msg">
+            </div>
+
+            <form>
+                <input type="email"  id="forget-email" class="form-control" placeholder="Type your e-mail" required autofocus>
+
+                <button id="forget-pass-btn" class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Send</button>
+            </form>
+
+            <a href="#" id="forget-signin-a">Sign in</a>
+            <a href="#" id="forget-signup-a">Sign up</a>
+        </div>
+
+        <div class="card card-container" id="signup-form" style="display: none;">
+            <img id="signup-profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <div id="lost-msg"></div>
+
+            <form>
+                <input type="text" id="signup-username" class="form-control" placeholder="Username" required autofocus>
+                <input type="email" id="signup-email" class="form-control" placeholder="Email" required>
+                <input type="password" id="signup-password" class="form-control" placeholder="Password" required>
+                <input type="password" id="signup-confirm-password" class="form-control" placeholder="Password" required>
+
+                <button id="signup-button" class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign Up</button>
+            </form>
+
+            <a href="#" id="signup-signin-a">Sign in</a>
+            <a href="#" id="signup-forget-a">Forgot password?</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+.container-fluid.main-header {
+    --header-height: 100px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.container-fluid.main-header {
+    margin : 0;
+    background-color: #1CBC9A;
+    padding: 0;
+}
+
+
+.container-fluid.main-header .navbar-brand {
+    height: var(--header-height);
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid.main-header .navbar-brand {
+}
+
+.container-fluid.main-header .navbar-brand .vote-logo{
+    max-height: var(--header-height);
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 22pt;
+    padding-top: 45px;
+    height: var(--header-height);
+    text-align: center;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: #1ba383;
+    color: white;
+}
+@media only screen and (min-width: 1268px) {
+    ul.nav.navbar-nav.navbar-left {
+        width: 70%;
+        max-width: 650px;
+        height: var(--header-height);
+        padding: 35px 0 0 7%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1268px) {
+    ul.nav.navbar-nav.navbar-left {
+        width: 70%;
+        max-width: 340px;
+        height: var(--header-height);
+        padding: 35px 0 0 7%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    ul.nav.navbar-nav.navbar-left {
+        width: 70%;
+        max-width: 200px;
+        height: var(--header-height);
+        padding: 35px 0 0 1%;
+    }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 768px){
+    ul.nav.navbar-nav.navbar-left {
+        width: 70%;
+        max-width: 86px;
+        height: var(--header-height);
+        padding: 35px 0 0 1%;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 691px){
+    ul.nav.navbar-nav.navbar-left {
+        width: 100%;
+        height: var(--header-height);
+        padding: 35px 0 0 1%;
+    }
+
+    navbar-default .navbar-nav>li>a {
+        height: 60px;
+    }
+}
+
+button.navbar-toggle.collapsed {
+    height: 70px;
+    margin-top: 28px;
+}
+
+button.navbar-toggle {
+    height: 70px;
+    margin-top: 28px;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(227, 224, 243), rgb(204, 207, 207));
+
+}
+
+#content.container {
+    margin: 0;
+    padding: 0;
+}
